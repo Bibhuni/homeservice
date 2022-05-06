@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Login and Sign-Up</title>
+    <link rel="stylesheet" href="css/servicelogin.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="back">
+            <a  href="login.html">
+            <button class="back-btn">Back to Login</button>
+        </a>
+        </div>
+        <div class="form-box">
+            <div class="text">Service provider</div>
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="img/facebook.png">
+                <img src="img/twitter.png">
+                <img src="img/search.png">
+            </div>
+            <form id="login" action="servicelogin.php" method="post" class="input-group">
+                <input type="text" name="serviceid" class="input-field" placeholder="Enter User Id" required>
+                <input type="password" name="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" name="login" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" action="serviceregistration.php" method="post" class="input-group">
+                <input type="text" name="serviceid" class="input-field" placeholder="Enter User Id" required>
+                <select type="text" name="category" id="category" class="input-field" placeholder="category" required>
+                    <option value="electrician">Electrician</option>
+                    <option value="plumber">Plumber</option>
+                    <option value="house cleansing">House Cleansing</option>
+                    <option value="parlour">Parlour</option>
+                <input type="email" name="email" class="input-field" placeholder="Email Id" required>
+                <input type="password" name="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" name="register" class="submit-btn">Register</button>
+            </form>
+        </div>    
+    </div>
+
+    <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+
+            function register()
+            {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+            }
+
+            function login()
+            {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+            }
+
+    </script>
+</body>
+</html>

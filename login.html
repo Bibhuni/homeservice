@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>Login and Sign-Up</title>
+    <link rel="stylesheet" href="css/loginstyle.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="back">
+            <a  href="index.html">
+            <button class="back-btn">Back to Home</button>
+        </a>
+        </div>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="admin()">Admin Login</button>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="img/facebook.png">
+                <img src="img/twitter.png">
+                <img src="img/search.png">
+            </div>
+            <form id="admin" action="admin.php" method="post" class="input-group">
+                <input type="text" class="input-field" name="admin_name" placeholder="Enter Admin User Id" required>
+                <input type="password" class="input-field" name="admin_password" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" name="adminlogin" class="submit-btn">Admin Login</button>
+            </form>
+            <div class="log">
+            <form id="login" action="userlogin.php" method="post" class="input-group">
+                <input type="text" name="userid" class="input-field" placeholder="Enter User Id" required>
+                <input type="password" name="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" name="login" class="submit-btn">Log in</button>
+            </form>
+                <a id="service-prov" class="service-prov" href="servicelogin.html">
+                    <button class="submit-btn">Service provider Login/Register </button>
+                    </a>    
+            
+        </div>
+            <form action="userregister.php" method="post" id="register" class="input-group">
+                <input type="text" class="input-field" name="userid" placeholder="Enter User Id" required>
+                <input type="email" class="input-field" name="email" placeholder="Email Id" required>
+                <input type="password" class="input-field" name="password" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn" name="register">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+            var v = document.getElementById("admin");
+            var w = document.getElementById("login");
+            var x = document.getElementById("register");
+            var z = document.getElementById("btn");
+            var u = document.getElementById("service-prov");
+
+
+            function register()
+            {
+            u.style.top = "423px";  
+            v.style.left = "900px";
+            w.style.left = "900px";
+            x.style.left = "60px";
+            z.style.left = "225px";
+            }
+
+            function login()
+            {
+            u.style.top = "382px";  
+            u.style.left = "60px";  
+            v.style.left = "800px";
+            w.style.left = "60px";
+            x.style.left = "-400px";
+            z.style.left = "125px";
+            }
+
+            function admin()
+            {
+            u.style.top = "382px";  
+            u.style.left = "60px";  
+            v.style.left = "60px";
+            w.style.left = "-400px" ;
+            x.style.left = "-400px";
+            z.style.left = "0px";
+            }
+
+
+    </script>
+</body>
+</html>

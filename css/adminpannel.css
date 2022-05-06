@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+}
+
+.hero{
+  height: 200%;
+  width: 100%;
+  background-image: linear-gradient(to right, #fa6f9d,#f5cd7d);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+
+#navbar {
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    background: #191a1d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 4px;
+
+  }
+  
+  #navbar a h2 {
+    color: #ffffff;
+    border-bottom-style: solid;
+  }
+  
+  #navbar a h2:hover {
+    border-color: #177ddc;
+  }
+
+.heading{
+    color: #ffffff;
+}
+  
+  a:not([href]):not([tabindex]) {
+
+    font-size: 21px;
+    color: white;
+    text-decoration: auto;
+}
+  
+  
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #navbar ul li a {
+    color: #d9d9d9;
+    justify-content: center;
+    padding: 0.25rem;
+    margin: 0.5rem 0.5rem;
+    text-decoration: none;
+  }
+  
+  #navbar ul li a:hover {
+    border-bottom-style: solid;
+    color: #ffffff;
+    border-bottom-color: #177ddc;
+  }
+
+
+body{
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.text{
+  margin-top: 50px;
+  text-align: center;
+}
+
+th,td{
+  border-bottom: 1px solid rgba(175, 175, 175, 0.562);
+}
+
+  .slide{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  table{
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    border-collapse: collapse;
+  }
+
+  thead{
+    background-color: #8a3558b7;
+    color: rgb(0, 0, 0);
+    height: 50px;
+  }
+
+  tbody{
+    height: 260px;
+    text-align: center;
+  }
+
+td button{
+  border: none;
+  padding: 7px 20px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ff105f,#ffad06);
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+td button{
+  cursor: pointer;
+
+}
+tr:nth-child(even) {
+  background-color: rgba(175, 175, 175, 0.596) ;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.466) ;
+}

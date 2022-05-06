@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Home Service Application</title>
+</head>
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src ="img/services.jpg" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact us</a></li>                         
+        </ul>
+        <div class ="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>  
+
+    <section class="background firstSection" id="home">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">"Welcome to Online Services Application"</p>
+                <p class="text-small">This website provides on-demand home services like plumbing, deep cleaning, carpentry, sofa & carpet cleaning, pest control, and other more services.</p>
+                <div class="buttons">
+                    <a href="login.html">
+                    <button class="btn">Login</button>
+                    <button class="btn">Register</button>
+                    </a>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="img/services.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <div class="paras">
+        <p class="sectionTag text-big">Browse professionals using different filters</p>
+        <p class="sectionSubTag text-small">User must be able to find services without any hassle. Provide different types of filters which would ease the process. Filters such as finding the service provider based on cost, distance and specialty would increase the user experience considerably.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="img/acrepair.png" alt="service logo" class="imgfluid">
+        </div>
+    </section>
+
+    <section class="section section-left">
+        <div class="paras">
+        <p class="sectionTag text-big">Service Providers in your Doorstep</p>
+        <p class="sectionSubTag text-small">Now a days for any services like Plumbing, Electrical, Electronic, Mechanical, Pest Control, Home Paint and Machine Repairing, if any customer wants to use this type of services than they can go through a personal meeting or mobile call. It is difficult for customer to find any service in emergency at any time and place. So with this project we are going to develop website and android app which will help customers to find out solution for any problems related to Plumbing, Electrical, Electronic, and Mechanical, Pest Control, Home Paint and Machine Repairing service. Our website and android application will provide a platform for all kind of house hold services at any time and place. Our project will also provide the facilities like security, online payment, map navigation and also advertisement.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="img/homerepair.jpg" alt="service logo" class="imgfluid">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+        <p class="sectionTag text-big">In-app Chatting</p>
+        <p class="sectionSubTag text-small">Within a customer app for on-demand home service, you can provide in-app messaging for the seamless answering of customer queries. This feature is much faster than the customer calling service.
+            The in-app messaging feature allows the retailers and customers to understand each other in a better way. Moreover, it will reduce confusion and the possibility of errors. However, you need to make sure that your offered network is encrypted so that it can maintain the privacy of your communication.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="img/chatting.jpg" alt="service logo" class="imgfluid">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input class="form-input" type="text" name="phone" id="name" placeholder="Enter Your Phone No.">
+            <input class="form-input" type="email" name="email" id="name" placeholder="Enter Your Email Address">
+            <textarea class ="form-input" name="text" id="text" cols="10" rows="10" placeholder="Ellaborate Your Concern"></textarea>
+            <button class="btn btn-sm btn-dark">Submit</button>
+        </div>      
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+        Copyright &copy; 2022 - All rights reserved
+        </p>
+    </footer>
+    <script src="js/resp.js"></script>
+</body>
+</html>
